@@ -1,70 +1,100 @@
-# Getting Started with Create React App
+XWeather – Real-Time Weather Application (React)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+XWeather is a React-based weather information application developed using the WeatherAPI service.
+Users can search any city and view real-time temperature, humidity, condition, and wind speed.
 
-## Available Scripts
+☀️ Features
 
-In the project directory, you can run:
+Search weather by city
 
-### `npm start`
+Shows:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Temperature (°C)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Humidity (%)
 
-### `npm test`
+Condition (cloudy, sunny, etc.)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Wind Speed (km/h)
 
-### `npm run build`
+Real-time data fetching using WeatherAPI
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Loading indicator
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Error handling for invalid cities
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Clean and responsive UI
 
-### `npm run eject`
+🧰 Tech Stack
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+React.js
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Fetch API
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+WeatherAPI
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+CSS3
 
-## Learn More
+🏗️ Project Structure
+XWeather/
+ ├─ public/
+ ├─ src/
+ │   ├─ App.js
+ │   ├─ WeatherCard.jsx
+ │   ├─ index.css
+ │   └─ index.js
+ ├─ package.json
+ └─ README.md
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+⚙️ Installation & Setup
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Clone the repo:
 
-### Code Splitting
+git clone <repo-url>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+Install dependencies:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+npm install
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Add your API Key in App.js
 
-### Advanced Configuration
+const API_KEY = "your_api_key_here";
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+Run the project
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+npm start
 
-### `npm run build` fails to minify
+🌍 API Used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+WeatherAPI
+Endpoint used:
+
+https://api.weatherapi.com/v1/current.json?key=YOUR_KEY&q=CITY_NAME
+
+📸 Screenshots
+
+(Add your screenshots here)
+
+Initial UI
+
+Weather displayed
+
+Loading message
+
+Invalid city alert
+
+🧪 Behavior & Requirements Covered
+
+✔ Uses input + button
+✔ Search triggers only on button click
+✔ Shows “Loading data…” while fetching
+✔ Displays 4 weather cards
+✔ Shows alert on invalid city
+✔ Uses required class names (weather-cards, weather-card)
+
+📜 License
+
+This project is part of the Crio FE Buildout learning modules.
